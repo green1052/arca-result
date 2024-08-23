@@ -1,0 +1,27 @@
+{
+    "name": "arca-result",
+    "version": "1.0.0",
+    "type": "module",
+    "devDependencies": {
+        "@types/luxon": "^3.4.2",
+        "@types/node": "^22.5.0",
+        "@types/tough-cookie": "^4.0.5",
+        "@types/tough-cookie-file-store": "^2.0.4",
+        "ts-patch": "^3.2.1",
+        "typescript": "^5.5.4"
+    },
+    "dependencies": {
+        "cheerio": "^1.0.0",
+        "got": "^14.4.2",
+        "luxon": "^3.5.0",
+        "tough-cookie": "^4.1.4",
+        "tough-cookie-file-store": "^2.0.3",
+        "typia": "^6.9.0"
+    },
+    "scripts": {
+        "build": "tsc",
+        "start": "tsc && node ./dist/index.js",
+        "prepare": "ts-patch install && typia patch"
+    },
+    "packageManager": "pnpm@9.8.0"
+}
